@@ -1,9 +1,7 @@
-const env = require("../.env");
+const env = require("./.env");
 const Telegraf = require("telegraf");
 const bot = new Telegraf(env.token);
-const email = "noreplydaparaconfiar@gmail.com";
 const puppeteer = require("puppeteer");
-
 
 bot.start((ctx) => {
   const from = ctx.update.message.from;
@@ -87,9 +85,6 @@ bot.action("MP", (ctx) => {
   botamazon(consultaproduto)
   });
   
-
-  
-    
   });
   
 }); 
